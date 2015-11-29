@@ -75,19 +75,19 @@ xor u_xor_1( EOP, Op1_Sign_reg, Op2_Sign_reg) ;
    	if(RSTn!=1) begin
    		StateMC <= Idle ;
 		//---- Reset All -----
-		Op1_Sign_reg         <=     Op1_Sign       ;
-		Final_Exponent_reg   <=     Final_Exponent ;
-		Op1_Mantissa_reg     <=     Op1_Mantissa   ;
-		Op2_Sign_reg         <=     Op2_Sign       ;
-		Op2_Mantissa_reg     <=     Op2_Mantissa   ;
-		diff_reg             <=     diff           ;
-		exc_reg              <=     exc_val        ;
-		Final_Mantissa_reg   <=     Final_Mantissa ;
-		Final_Sign_reg       <=     Final_Sign     ;
-		carry_reg            <=     carry          ;
-		G_reg                <=     G_val          ;
-		R_reg                <=     R_val          ;
-		S_reg                <=     S_val          ;
+		Op1_Sign_reg         <=     0 ;
+		Final_Exponent_reg   <=     0 ;
+		Op1_Mantissa_reg     <=     0 ;
+		Op2_Sign_reg         <=     0 ;
+		Op2_Mantissa_reg     <=     0 ;
+		diff_reg             <=     0 ;
+		exc_reg              <=     0 ;
+		Final_Mantissa_reg   <=     0 ;
+		Final_Sign_reg       <=     0 ;
+		carry_reg            <=     0 ;
+		G_reg                <=     0 ;
+		R_reg                <=     0 ;
+		S_reg                <=     0 ;
 
    	end
    	else begin
