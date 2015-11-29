@@ -29,7 +29,7 @@ begin
 			if(Data_valid==1 && ACK==0) begin
 				if(Data[30:23]==8'hFF && Data[22:0]==0)
 				  Exc[2:0] = 3'b011;// Infinity condition
-				else if(Data[30:23]==8'hFF && Data[22]==1)
+				else if(Data[30:23]==8'hFF && Data[22]!=0)
 				  Exc[2:0] = 3'b100;// NaN condition	
 				next_StateMC = ResetOutput ;
 				ACK = 1'b1 ;
