@@ -50,7 +50,6 @@ always@(posedge CLK) begin
 		BStateMC <= Bnext_StateMC ;		
 	end
 end
-
 always @(*) 
 begin  
    count = count_reg;  
